@@ -70,7 +70,7 @@ h5,
   display: block;
   max-width: 100%;
   max-height: 100%;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 .inner-wrapper {
   max-width: 1200px;
@@ -130,7 +130,7 @@ h5,
 .header-wrapper .header-content {
   position: relative;
   z-index: 50;
-  background-image: url('../../static/img/nav-bg.png');
+  background-image: url('../../static/img/28.png');
   background-position: center;
   background-repeat: repeat-x;
   background-size: auto 100%;
@@ -142,7 +142,7 @@ h5,
 .header-wrapper .header-content .logo-wrapper {
   padding-top: 10px;
   display: inline-block;
-  height: 100px;
+  height: 170px;
 }
 @media screen and (max-width: 640px) {
   .header-wrapper .header-content .logo-wrapper {
@@ -1053,3 +1053,151 @@ h5,
   display: none;
 }
 
+.big-logo{
+    height:auto;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:1;
+    position: relative;
+    z-index: 10;
+    bottom: 30%;
+    color: #ffffff;
+    font-family: "微软雅黑", Arial;
+    /*font-size: 2em;*/
+    line-height: 20px;
+    text-align: center;
+    margin-top: -17%;
+}
+
+.main-font{
+    font-size: 40px;
+    -webkit-transition:font-size 0.2s ease-out;
+}
+
+@media only screen and (max-width: 1200px) { .main-font{ font-size: 20px; }}
+@media only screen and (max-width: 1100px) { .main-font{ font-size: 20px; }}
+@media only screen and (max-width: 1000px) { .main-font{ font-size: 20px; }}
+@media only screen and (max-width: 900px) { .main-font{ font-size: 20px; }}
+@media only screen and (max-width: 800px) { .main-font{ font-size: 20px; }}
+@media only screen and (max-width: 700px) { .main-font{ font-size: 20px; }}
+@media only screen and (max-width: 600px) { .main-font{ font-size: 15px; }}
+@media only screen and (max-width: 500px) { .main-font{ font-size: 15px; }}
+@media only screen and (max-width: 400px) { .main-font{ font-size: 8px; }}
+@media only screen and (max-width: 300px) { .main-font{ font-size: 5px; }}
+
+
+.second-logo{
+    height:auto;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:1;
+    position: relative;
+    z-index: 10;
+    bottom: 30%;
+    color: #ffffff;
+    font-family: "微软雅黑", Arial;
+    /*font-size: 2em;*/
+    line-height: 20px;
+    text-align: center;
+    margin-top: -17%;
+}
+
+.second-font{
+    font-size: 40px;
+    -webkit-transition:font-size 0.2s ease-out;
+}
+
+@media only screen and (max-width: 1200px) { .second-font{ font-size: 20px; }}
+@media only screen and (max-width: 1100px) { .second-font{ font-size: 20px; }}
+@media only screen and (max-width: 1000px) { .second-font{ font-size: 20px; }}
+@media only screen and (max-width: 900px) { .second-font{ font-size: 20px; }}
+@media only screen and (max-width: 800px) { .second-font{ font-size: 20px; }}
+@media only screen and (max-width: 700px) { .second-font{ font-size: 20px; }}
+@media only screen and (max-width: 600px) { .second-font{ font-size: 15px; }}
+@media only screen and (max-width: 500px) { .second-font{ font-size: 15px; }}
+@media only screen and (max-width: 400px) { .second-font{ font-size: 8px; }}
+@media only screen and (max-width: 300px) { .second-font{ font-size: 5px; }}
+
+.third-flame{
+    height:auto;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:1;
+    position: relative;
+    z-index: 10;
+    bottom: 30%;
+    color: #000000;
+    font-family:SimHei;
+    /*font-size: 2em;*/
+    line-height: 20px;
+    text-align: center;
+    margin-top: -70%;
+}
+
+
+
+.fourth-flame{
+    height:auto;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:1;
+    position: relative;
+    z-index: 10;
+    bottom: 30%;
+    color: #FFFFFF;
+    font-family:SimHei;
+    /*font-size: 2em;*/
+    line-height: 20px;
+    text-align: center;
+    margin-top: -24%;
+}
+
+
+
+.sixth-flame{
+    height:auto;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:1;
+    position: relative;
+    z-index: 10;
+    bottom: 30%;
+    color: #FFFFFF;
+    font-family:SimHei;
+    /*font-size: 2em;*/
+    line-height: 20px;
+    text-align: center;
+    margin-top: -26%;
+}
+
+.seventh-flame{
+    height:auto;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:1;
+    position: relative;
+    z-index: 10;
+    bottom: 30%;
+    color: #FFFFFF;
+    font-family:SimHei;
+    /*font-size: 2em;*/
+    line-height: 20px;
+    text-align: center;
+    margin-top: -45%;
+}
+
+.eighth-flame{
+    height:auto;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:1;
+    position: relative;
+    z-index: 10;
+    bottom: 30%;
+    color: #FFFFFF;
+    font-family:SimHei;
+    /*font-size: 2em;*/
+    line-height: 10px;
+    text-align: center;
+    margin-top: -45%;
+}
