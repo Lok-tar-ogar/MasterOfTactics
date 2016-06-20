@@ -70,7 +70,7 @@ h5,
   display: block;
   max-width: 100%;
   max-height: 100%;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 .inner-wrapper {
   max-width: 1200px;
@@ -1074,17 +1074,17 @@ h5,
     -webkit-transition:font-size 0.2s ease-out;
 }
 
-@media only screen and (max-width: 1200px) { .main-font{ font-size: 20px; }}
-@media only screen and (max-width: 1100px) { .main-font{ font-size: 20px; }}
-@media only screen and (max-width: 1000px) { .main-font{ font-size: 20px; }}
-@media only screen and (max-width: 900px) { .main-font{ font-size: 20px; }}
-@media only screen and (max-width: 800px) { .main-font{ font-size: 20px; }}
+@media only screen and (max-width: 1200px) { .main-font{ font-size: 35px; }}
+@media only screen and (max-width: 1100px) { .main-font{ font-size: 35px; }}
+@media only screen and (max-width: 1000px) { .main-font{ font-size: 30px; }}
+@media only screen and (max-width: 900px) { .main-font{ font-size: 30px; }}
+@media only screen and (max-width: 800px) { .main-font{ font-size: 25px; }}
 @media only screen and (max-width: 700px) { .main-font{ font-size: 20px; }}
-@media only screen and (max-width: 600px) { .main-font{ font-size: 15px; }}
+@media only screen and (max-width: 600px) { .main-font{ font-size: 20px; }}
 @media only screen and (max-width: 500px) { .main-font{ font-size: 15px; }}
-@media only screen and (max-width: 400px) { .main-font{ font-size: 8px; }}
-@media only screen and (max-width: 300px) { .main-font{ font-size: 5px; }}
-
+@media only screen and (max-width: 400px) { .main-font{ font-size: 13px; }}
+@media only screen and (max-width: 300px) { .main-font{ font-size: 9px; }}
+@media only screen and (max-width: 290px) { .main-font{ font-size: 9px; }.main-3-img{ display:none;}}
 
 .second-logo{
     height:auto;
@@ -1103,21 +1103,21 @@ h5,
 }
 
 .second-font{
-    font-size: 40px;
+    font-size: 35px;
     -webkit-transition:font-size 0.2s ease-out;
 }
 
-@media only screen and (max-width: 1200px) { .second-font{ font-size: 20px; }}
-@media only screen and (max-width: 1100px) { .second-font{ font-size: 20px; }}
-@media only screen and (max-width: 1000px) { .second-font{ font-size: 20px; }}
-@media only screen and (max-width: 900px) { .second-font{ font-size: 20px; }}
+@media only screen and (max-width: 1200px) { .second-font{ font-size: 30px; }}
+@media only screen and (max-width: 1100px) { .second-font{ font-size: 28px; }}
+@media only screen and (max-width: 1000px) { .second-font{ font-size: 26px; }}
+@media only screen and (max-width: 900px) { .second-font{ font-size: 24px; }}
 @media only screen and (max-width: 800px) { .second-font{ font-size: 20px; }}
-@media only screen and (max-width: 700px) { .second-font{ font-size: 20px; }}
+@media only screen and (max-width: 700px) { .second-font{ font-size: 15px; }}
 @media only screen and (max-width: 600px) { .second-font{ font-size: 15px; }}
-@media only screen and (max-width: 500px) { .second-font{ font-size: 15px; }}
+@media only screen and (max-width: 500px) { .second-font{ font-size: 12px; }}
 @media only screen and (max-width: 400px) { .second-font{ font-size: 8px; }}
-@media only screen and (max-width: 300px) { .second-font{ font-size: 5px; }}
-
+@media only screen and (max-width: 320px) { .second-font{ font-size: 6px; margin-top: -5%}.second-br{display: none;}}
+@media only screen and (max-width: 200px) { .second-font{ font-size: 4px; margin-top: -5%}.second-br{display: none;}}
 .third-flame{
     height:auto;
     filter:alpha(opacity=70);
