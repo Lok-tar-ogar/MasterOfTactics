@@ -1083,7 +1083,7 @@ h5,
 @media only screen and (max-width: 600px) { .main-font{ font-size: 20px; }}
 @media only screen and (max-width: 500px) { .main-font{ font-size: 15px; }}
 @media only screen and (max-width: 400px) { .main-font{ font-size: 13px; }}
-@media only screen and (max-width: 300px) { .main-font{ font-size: 9px; }}
+@media only screen and (max-width: 350px) { .main-font{ font-size: 9px; }.main-3-img{ display:block;}}
 @media only screen and (max-width: 290px) { .main-font{ font-size: 9px; }.main-3-img{ display:none;}}
 
 .second-logo{
@@ -1110,14 +1110,14 @@ h5,
 @media only screen and (max-width: 1200px) { .second-font{ font-size: 30px; }}
 @media only screen and (max-width: 1100px) { .second-font{ font-size: 28px; }}
 @media only screen and (max-width: 1000px) { .second-font{ font-size: 26px; }}
-@media only screen and (max-width: 900px) { .second-font{ font-size: 24px; }}
-@media only screen and (max-width: 800px) { .second-font{ font-size: 20px; }}
-@media only screen and (max-width: 700px) { .second-font{ font-size: 15px; }}
-@media only screen and (max-width: 600px) { .second-font{ font-size: 15px; }}
-@media only screen and (max-width: 500px) { .second-font{ font-size: 12px; }}
-@media only screen and (max-width: 400px) { .second-font{ font-size: 8px; }}
-@media only screen and (max-width: 320px) { .second-font{ font-size: 6px; margin-top: -5%}.second-br{display: none;}}
-@media only screen and (max-width: 200px) { .second-font{ font-size: 4px; margin-top: -5%}.second-br{display: none;}}
+@media only screen and (max-width: 900px) { .second-font{ font-size: 22px; }.second-br{display: none;}}
+@media only screen and (max-width: 800px) { .second-font{ font-size: 18px; }}
+@media only screen and (max-width: 700px) { .second-font{ font-size: 15px; }.second-br{display: none;}}
+@media only screen and (max-width: 600px) { .second-font{ font-size: 13px; }.second-br{display: none;}}
+@media only screen and (max-width: 500px) { .second-font{ font-size: 10px; }.second-br{display: none;}}
+@media only screen and (max-width: 400px) { .second-font{ font-size: 8px; }.second-br{display: none;}}
+@media only screen and (max-width: 320px) { .second-font{ font-size: 4px; margin-top: -5%}.second-br{display: none;}}
+@media only screen and (max-width: 200px) { .second-font{ font-size: 3px; margin-top: -5%}.second-br{display: none;}}
 
 .third-flame{
     height:auto;
@@ -1134,17 +1134,30 @@ h5,
     text-align: center;
     margin-top: -70%;
 }
-@media only screen and (max-width: 1200px) { .third-flame{ font-size: 30px; }}
-@media only screen and (max-width: 1100px) { .third-flame{ font-size: 28px; }}
-@media only screen and (max-width: 1000px) { .third-flame{ font-size: 26px; }}
-@media only screen and (max-width: 900px) { .third-flame{ font-size: 24px; }}
-@media only screen and (max-width: 800px) { .third-flame{ font-size: 20px; }}
-@media only screen and (max-width: 700px) { .third-flame{ font-size: 15px; }}
-@media only screen and (max-width: 600px) { .third-flame{ font-size: 15px; }}
-@media only screen and (max-width: 500px) { .third-flame{ font-size: 12px; }}
-@media only screen and (max-width: 400px) { .third-flame{ font-size: 8px; }}
-@media only screen and (max-width: 320px) { .third-flame{ font-size: 6px; margin-top: -5%}.second-br{display: none;}}
-@media only screen and (max-width: 200px) { .third-flame{ font-size: 4px; margin-top: -5%}.second-br{display: none;}}
+.third-ul{
+  font-size:15px;
+}
+.third-p{
+  font-size:30px;
+  text-indent:1em;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1200px) {.third-p{font-size:24px;text-indent:1em;}.third-ul{font-size:15px;}}
+@media only screen and (max-width: 1100px) {.third-p{font-size:24px;text-indent:1em;}.third-ul{font-size:14px;}}
+@media only screen and (max-width: 1000px) {.third-p{font-size:20px;text-indent:1em;}.third-ul{font-size:13px;}.third-br{display: none}}
+@media only screen and (max-width: 900px) {.third-p{font-size:16px;text-indent:1em;white-space:nowrap;overflow:hidden;margin-left:-10%;
+                                                                                     text-overflow:ellipsis;}.third-ul{font-size:12px;margin-left:-10%;}.third-br{display: none}}
+@media only screen and (max-width: 800px) {.third-p{font-size:14px;text-indent:1em;}.third-ul{font-size:10px;white-space:nowrap;overflow:hidden;
+                                                                                     text-overflow:ellipsis;line-height: 19px}.third-br{display: none}}
+@media only screen and (max-width: 700px) {.third-p{font-size:11px;text-indent:1em;}.third-ul{font-size:11px;white-space:nowrap;overflow:hidden;
+                                                                                     text-overflow:ellipsis;line-height: 19px}.third-br{display: none}}
+@media only screen and (max-width: 600px) {.third-p{font-size:9px;text-indent:1em;}.third-ul{font-size:11px;margin-left:-10%;white-space:nowrap;overflow:hidden;
+                                                                                     text-overflow:ellipsis;line-height: 15px}.third-br{display: none}}
+@media only screen and (max-width: 500px) {.third-p{font-size:7px;text-indent:1em;}.third-ul{font-size:7px;margin-left:-10%;white-space:nowrap;overflow:hidden;
+                                                                                     text-overflow:ellipsis;line-height: 12px}.third-br{display: none}}
+@media only screen and (max-width: 400px) {.third-p{font-size:7px;text-indent:1em;}.third-ul{font-size:6px;margin-left:-20%;white-space:nowrap;overflow:hidden;
+                                                                                     text-overflow:ellipsis;line-height: 12px}.third-br{display: none}}
+@media only screen and (max-width: 345px) {.third-p{font-size:6px;text-indent:1em;}.third-ul{display: none}.third-br{display: none}}
 
 
 .fourth-flame{
@@ -1162,18 +1175,183 @@ h5,
     text-align: center;
     margin-top: -24%;
 }
-@media only screen and (max-width: 1200px) { .fourth-flame{ font-size: 30px; }}
-@media only screen and (max-width: 1100px) { .fourth-flame{ font-size: 28px; }}
-@media only screen and (max-width: 1000px) { .fourth-flame{ font-size: 26px; }}
-@media only screen and (max-width: 900px) { .fourth-flame{ font-size: 24px; }}
-@media only screen and (max-width: 800px) { .fourth-flame{ font-size: 20px; }}
-@media only screen and (max-width: 700px) { .fourth-flame{ font-size: 15px; }}
-@media only screen and (max-width: 600px) { .fourth-flame{ font-size: 15px; }}
-@media only screen and (max-width: 500px) { .fourth-flame{ font-size: 12px; }}
-@media only screen and (max-width: 400px) { .fourth-flame{ font-size: 8px; }}
-@media only screen and (max-width: 320px) { .fourth-flame{ font-size: 6px; margin-top: -5%}.second-br{display: none;}}
-@media only screen and (max-width: 200px) { .fourth-flame{ font-size: 4px; margin-top: -5%}.second-br{display: none;}}
+.fourth-title{
+  font-size:38px;
+}
+.fourth-content{
+  font-size: 16px;
+}
+.fourth-img{
+  margin-top: 8%;
+}
+.fourth-img img{
+  width: 100%;
+  height:auto;
+  max-width: 236px;
+}
+@media only screen and (max-width: 1500px) { .fourth-title{
+  font-size:36px;
+}
+.fourth-content{
+  font-size: 15px;
+}
+.fourth-img{
+  margin-top: 6%;
+}
+.fourth-img img{
+  width: 100%;
+  height:auto;
+}}
+@media only screen and (max-width: 1400px) { .fourth-title{
+  font-size:32px;
+}
+.fourth-content{
+  font-size: 15px;
+}
+.fourth-img{
+  margin-top: 4%;
+}
+.fourth-img img{
+  width: 90%;
+  height:auto;
+}}
+@media only screen and (max-width: 1300px) { .fourth-title{
+  font-size:30px;
+}
+.fourth-content{
+  font-size: 12px;
+}
+.fourth-img{
+  margin-top: 3%;
+}
+.fourth-img img{
+  width: 90%;
+  height:auto;
+}
+.fourth-br{
+  display: none;
+}}
+@media only screen and (max-width: 1200px) {.fourth-title{
+  font-size:28px;
+}
+.fourth-content{
+  font-size: 12px;
+}
+.fourth-img{
+  margin-top: 3%;
+}
+.fourth-img img{
+  width: 50%;
+  height:auto;
+}
+.fourth-br{
+  display: none;
+}}
+@media only screen and (max-width: 1100px) { .fourth-title{
+  font-size:25px;
+}
+.fourth-content{
+  font-size: 10px;
+}
+.fourth-img{
+  margin-top: 2%;
+}
+.fourth-img img{
+  width: 50%;
+  height:auto;
+}
+.fourth-br{
+  display: none;
+}}
+@media only screen and (max-width: 1000px) { .fourth-title{
+  font-size:25px;
+}
+.fourth-content{
+  display: none;
+}
+.fourth-img{
+  margin-top: 4%;
+}
+.fourth-img img{
+  width: 100%;
+  height:auto;
+}
+.fourth-br{
+  display: none;
+}}
+@media only screen and (max-width: 900px){ .fourth-title{
+  font-size:20px;
+}
+.fourth-content{
+  display: none;
+}
+.fourth-img{
+  margin-top: 3%;
+}
+.fourth-img img{
+  width: 100%;
+  height:auto;
+}
+.fourth-br{
+  display: none;
+}}
+@media only screen and (max-width: 800px){ .fourth-title{
+  font-size:25px;
+}
+.fourth-content label{
+ display: none;
+}
+.fourth-img{
+  margin-top: 3%;
+}
+.fourth-img img{
+  width: 100%;
+  height:auto;
+  display: block;
+}
+.fourth-br{
+  display: none;
+}}
 
+@media only screen and (max-width: 400px){ .fourth-title{
+  font-size:23px;
+}
+.fourth-content label{
+ display: none;
+}
+
+.fourth-img img{
+  display: none;
+}
+.fourth-br{
+  display: none;
+}}
+@media only screen and (max-width: 300px){ .fourth-title{
+  font-size:12px;
+}
+.fourth-content label{
+ display: none;
+}
+
+.fourth-img img{
+  display: none;
+}
+.fourth-br{
+  display: none;
+}}
+@media only screen and (max-width: 200px){ .fourth-title{
+  display: none;
+}
+.fourth-content label{
+ display: none;
+}
+
+.fourth-img img{
+  display: none;
+}
+.fourth-br{
+  display: none;
+}}
 
 .sixth-flame{
     height:auto;
@@ -1186,21 +1364,63 @@ h5,
     color: #FFFFFF;
     font-family:SimHei;
     /*font-size: 2em;*/
-    line-height: 20px;
+    line-height: 0px;
     text-align: center;
     margin-top: -26%;
 }
-@media only screen and (max-width: 1200px) { .sixth-flame{ font-size: 30px; }}
-@media only screen and (max-width: 1100px) { .sixth-flame{ font-size: 28px; }}
-@media only screen and (max-width: 1000px) { .sixth-flame{ font-size: 26px; }}
-@media only screen and (max-width: 900px) { .sixth-flame{ font-size: 24px; }}
-@media only screen and (max-width: 800px) { .sixth-flame{ font-size: 20px; }}
-@media only screen and (max-width: 700px) { .sixth-flame{ font-size: 15px; }}
-@media only screen and (max-width: 600px) { .sixth-flame{ font-size: 15px; }}
-@media only screen and (max-width: 500px) { .sixth-flame{ font-size: 12px; }}
-@media only screen and (max-width: 400px) { .sixth-flame{ font-size: 8px; }}
-@media only screen and (max-width: 320px) { .sixth-flame{ font-size: 6px; margin-top: -5%}.second-br{display: none;}}
-@media only screen and (max-width: 200px) { .sixth-flame{ font-size: 4px; margin-top: -5%}.second-br{display: none;}}
+.sixth-p{
+  font-size: 30px;
+}
+.sixth-btn{
+  margin-top: 8%;
+}
+.sixth-content{
+  margin-top: 10%;
+}
+@media only screen and (max-width: 1400px) {
+  .sixth-p{
+  font-size: 26px;
+}
+  .sixth-btn{
+  margin-top: 3%;
+}}
+@media only screen and (max-width: 1300px) {
+  .sixth-p{
+  font-size: 26px;
+}
+  .sixth-br{
+    display: none;
+   }
+  .sixth-btn{
+  margin-top: 1%;
+}
+.sixth-content{
+  margin-top: 5%;
+}}
+@media only screen and (max-width: 1100px) {   .sixth-p{
+  font-size: 20px;
+}
+  .sixth-btn{
+  margin-top: 1%;
+}
+.sixth-content{
+  margin-top: 1%;
+}}
+@media only screen and (max-width: 1000px) { .sixth-content{
+  display: none;
+}
+.sixth-p2{
+  display: none;
+}}
+@media only screen and (max-width: 700px) { .sixth-p{
+  font-size: 12px;
+}}
+@media only screen and (max-width: 500px) { .sixth-p{
+  font-size: 8px;
+}}
+@media only screen and (max-width: 400px) {.sixth-p{
+  display: none;
+} }
 
 .seventh-flame{
     height:auto;
@@ -1217,16 +1437,55 @@ h5,
     text-align: center;
     margin-top: -45%;
 }
-@media only screen and (max-width: 1200px) { .seventh-flame{ font-size: 30px; }}
-@media only screen and (max-width: 1100px) { .seventh-flame{ font-size: 28px; }}
-@media only screen and (max-width: 1000px) { .seventh-flame{ font-size: 26px; }}
-@media only screen and (max-width: 900px) { .seventh-flame{ font-size: 24px; }}
-@media only screen and (max-width: 800px) { .seventh-flame{ font-size: 20px; }}
-@media only screen and (max-width: 600px) { .seventh-flame{ font-size: 15px; }}
-@media only screen and (max-width: 500px) { .seventh-flame{ font-size: 12px; }}
-@media only screen and (max-width: 400px) { .seventh-flame{ font-size: 8px; }}
-@media only screen and (max-width: 320px) { .seventh-flame{ font-size: 6px; margin-top: -5%}.second-br{display: none;}}
-@media only screen and (max-width: 200px) { .seventh-flame{ font-size: 4px; margin-top: -5%}.second-br{display: none;}}
+.seventh-p{
+  font-size:40px;
+}
+.img1{
+  margin-top:7%;
+}
+.btn{
+  margin-top:3%;
+  font-size: 32px;
+}
+@media only screen and (max-width: 1400px) { .img1{
+  margin-top:4%;
+}}
+@media only screen and (max-width: 1000px) {.img1{
+  margin-top:2%;
+}
+.btn{
+  margin-top:2%;
+  font-size: 20px;
+}
+.seventh-p{
+  font-size:30px;
+}}
+@media only screen and (max-width: 800px) { .img1{
+  margin-top:1%;
+}
+.btn{
+  margin-top:1%;
+  font-size: 10px;
+}
+.seventh-p{
+  font-size:20px;
+}}
+@media only screen and (max-width: 500px) { .seventh-br{
+   display: none;
+}
+.seventh-p{
+  font-size:15px;
+}
+.btn{
+  margin-top:1%;
+  font-size: 8px;
+}}
+@media only screen and (max-width: 360px) { .seventh-p{
+  display:none;
+
+}}
+@media only screen and (max-width: 321px) { .seventh-flame{ }}
+
 
 .eighth-flame{
     height:auto;
@@ -1242,14 +1501,10 @@ h5,
     line-height: 10px;
     text-align: center;
     margin-top: -45%;
+    @font-family-base:@font-family-sans-serif;
+    @font-size-base: 12px;
 }
-@media only screen and (max-width: 1200px) { .eighth-flame{ font-size: 30px; }}
-@media only screen and (max-width: 1100px) { .eighth-flame{ font-size: 28px; }}
-@media only screen and (max-width: 1000px) { .eighth-flame{ font-size: 26px; }}
-@media only screen and (max-width: 900px) { .eighth-flame{ font-size: 24px; }}
-@media only screen and (max-width: 800px) { .eighth-flame{ font-size: 20px; }}
-@media only screen and (max-width: 600px) { .eighth-flame{ font-size: 15px; }}
-@media only screen and (max-width: 500px) { .eighth-flame{ font-size: 12px; }}
-@media only screen and (max-width: 400px) { .eighth-flame{ font-size: 8px; }}
-@media only screen and (max-width: 320px) { .eighth-flame{ font-size: 6px; margin-top: -5%}.second-br{display: none;}}
-@media only screen and (max-width: 200px) { .eighth-flame{ font-size: 4px; margin-top: -5%}.second-br{display: none;}}
+
+@media only screen and (max-width: 1200px) {.eighth-flame{font-size:10px;} }
+@media only screen and (max-width: 700px) {.eighth-flame{font-size:6px;} }
+@media only screen and (max-width: 500px) {.eighth-flame{font-size:3px;} }
