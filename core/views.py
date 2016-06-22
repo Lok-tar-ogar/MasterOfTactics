@@ -29,7 +29,16 @@ from django.shortcuts import render
 
 
 
+def ipfrom(ip):
+    url = 'http://ip.taobao.com/service/getIpInfo.php?ip=' + ip
+    result=post(url,{}).decode()
+    return json.loads(result)
+
+
+def post(url, data):#封装post方法
+    return urllib.request.urlopen(url, urllib.parse.urlencode(data).encode('utf-8')).read()
 
 def index(request):
+    dic=ipfrom(request.META['REMOTE_ADDR'])
     return render(request, 'index.html', locals())
 
