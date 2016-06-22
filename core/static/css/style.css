@@ -3,6 +3,7 @@ body {
   font-family: 'GothamBook', Verdana, Arial, Helvetica, sans-serif;
   font-size: 14px;
   letter-spacing: 0.05em;
+  min-width:320px;
   /*color: #f0f0f0;*/
   /*background: #1176c3;*/
 }
@@ -1508,3 +1509,20 @@ h5,
 @media only screen and (max-width: 1200px) {.eighth-flame{font-size:10px;} }
 @media only screen and (max-width: 700px) {.eighth-flame{font-size:6px;} }
 @media only screen and (max-width: 500px) {.eighth-flame{font-size:3px;} }
+
+
+.fifth-flame{
+    height:auto;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:1;
+    position: relative;
+    z-index: 10;
+    bottom: 30%;
+    color: #FFFFFF;
+    font-family:SimHei;
+    /*font-size: 2em;*/
+    line-height: 20px;
+    text-align: center;
+    margin-top: -38%;
+}
