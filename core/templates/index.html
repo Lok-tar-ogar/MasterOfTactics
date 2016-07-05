@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}"/>
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}"/>
     <link rel="stylesheet" type="text/css" href="{% static "css/jquery.fancybox.css" %}"/>
-    <script type="text/javascript" src="{% static "js/jquery.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
     <script type="text/javascript" src="{% static "js/jwplayer.js" %}"></script>
     <script type="text/javascript" src="{% static "js/jquery.fancybox.js" %}"></script>
     <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
@@ -80,52 +80,40 @@ $(document).ready(function () {
         <div style="padding:35px;" class="col-xs-12">
                 <div style="border-bottom:1px dashed #ccc;padding-right:45px;">
                     <div style="padding-top:0px">
-                    <span style="margin-left:5px;color:#0E94E7;font-style:bold;font-size:36px"><b><a style="color:#0E94E7;font-style:bold;font-size:36px" href="/news/13">四美坊与九越互动达成...</a></b></span>
+                    <span style="margin-left:5px;color:#0E94E7;font-style:bold;"><b><h4><a style="color:#0E94E7;font-style:bold;" href="/news/13">.</a></h4></b></span>
 
                     </div>
                 </div>
                 <div style="">
 
-
-                    <div class="Newscontent">
+{% for adv in advs %}
+<div class="Newscontent" style="margin-bottom: 10%">
                     <span style="text-align:left;color:#fff;margin-top:10px;margin-bottom:5px;">
 
-                        <a style="color:#fff;" href="/news/8">七年魔仙、音符之谜等你来破解</a>
+                        <h5 class="visible-lg"><a style="color:#fff;" href="#" data-target="#modal_{{ adv.id }}" data-toggle="modal">{{ adv.title }}</a></h5>
+                        <a class="visible-xs visible-md" style="color:#fff;" href="#" data-target="#modal_{{ adv.id }}" data-toggle="modal">{{ adv.title }}</a>
                     </span>
                     <span align="right" style="float:right;color:#fff;">
-                        11/30
+                        {{ adv.dim_date }}
                     </span>
+
                     </div>
+    <div class="modal fade" id="modal_{{ adv.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" style="width: 60%;;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">{{ adv.title }}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{ adv.content }}</p>
+      </div>
 
-                    <div class="Newscontent">
-                    <span style="text-align:left;color:#fff;margin-top:10px;margin-bottom:5px;">
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+{% endfor %}
 
-                        <a style="color:#fff;" href="/news/7">百位英雄与您一起进入《灵魂战歌》</a>
-                    </span>
-                    <span align="right" style="float:right;color:#fff;">
-                        11/30
-                    </span>
-                    </div>
-
-                    <div class="Newscontent">
-                    <span style="text-align:left;color:#fff;margin-top:10px;margin-bottom:5px;">
-
-                        <a style="color:#fff;" href="/news/6">《灵魂战歌》8月20日震撼来袭 细节创新</a>
-                    </span>
-                    <span align="right" style="float:right;color:#fff;">
-                        11/30
-                    </span>
-                    </div>
-
-                    <div class="Newscontent">
-                    <span style="text-align:left;color:#fff;margin-top:10px;margin-bottom:5px;">
-
-                        <a style="color:#fff;" href="/news/0">“四美坊”与九越互动达成战略伙伴关系</a>
-                    </span>
-                    <span align="right" style="float:right;color:#fff;">
-                        11/04
-                    </span>
-                    </div>
 
 
                 </div>
