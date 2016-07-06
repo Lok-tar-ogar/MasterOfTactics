@@ -43,8 +43,19 @@ def index(request):
     try:
         iplanguage=dic['country']
         if iplanguage=='德国':
+            advs = adv.objects.filter(language='gr')[:3]
+            return render(request, 'index_gr.html', locals())
+        elif iplanguage=='法国':
+            advs = adv.objects.filter(language='fr')[:3]
+            return render(request, 'index_fr.html', locals())
+        elif iplanguage == '俄罗斯':
+            advs = adv.objects.filter(language='rs')[:3]
+            return render(request, 'index_rs.html', locals())
+        else:
             advs = adv.objects.filter(language='en')[:3]
+        return render(request, 'index_en.html', locals())
+
     except Exception as e:
         advs=adv.objects.filter(language='en')[:3]
-    return render(request, 'index_rs.html', locals())
+        return render(request, 'index_en.html', locals())
 
