@@ -2,27 +2,27 @@
 from django.shortcuts import render
 from core.models import *
 from django.http import HttpResponse, HttpResponseRedirect
-from math import ceil
-import random
+# from math import ceil
+# import random
 import os
-import io as cStringIO
-from datetime import datetime
-import hashlib
-from django.core.files.storage import default_storage
-import json
-import time
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from django.db import connection
-from django.utils import timezone
+# import io as cStringIO
+# from datetime import datetime
+# import hashlib
+# from django.core.files.storage import default_storage
+# import json
+# import time
+# from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+# from django.db import connection
+# from django.utils import timezone
 try:
     from functools import wraps
 except ImportError:
     from django.utils.functional import wraps  # Python 2.4 fallback.
-from django.utils.decorators import available_attrs
-import base64
+#from django.utils.decorators import available_attrs
+#import base64
 
 import urllib.parse
-import urllib
+import urllib.request
 import sys
 import http.cookiejar
 import json
@@ -41,6 +41,10 @@ def post(url, data):#封装post方法
 def index(request):
     dic=ipfrom(request.META['REMOTE_ADDR'])
     try:
-        advs=adv.objects.all()[:5]
-    return render(request, 'index.html', locals())
+        iplanguage=dic['country']
+        if iplanguage=='德国':
+            advs = adv.objects.filter(language='en')[:3]
+    except Exception as e:
+        advs=adv.objects.filter(language='en')[:3]
+    return render(request, 'index_rs.html', locals())
 
