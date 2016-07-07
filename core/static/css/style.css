@@ -1,4 +1,11 @@
-
+@font-face {
+    font-family: "Gotham";
+    src: url("../font/Gotham-Ultra.otf");
+}
+@font-face {
+    font-family: "汉仪力量黑简";
+    src: url("../font/HYLILIANGHEIJ.TTF");
+}
 body {
   font-family: 'GothamBook', Verdana, Arial, Helvetica, sans-serif;
   font-size: 14px;

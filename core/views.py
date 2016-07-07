@@ -67,5 +67,5 @@ def index(request):
         advs=adv.objects.filter(language='en',act_date__gt=timezone.now())[:3]
         if adv:
             isshow = '0'
-        return render(request, 'index_en.html', locals())
+        return render(request, 'index_gr.html', locals())
 
