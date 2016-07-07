@@ -98,8 +98,15 @@ $(document).ready(function () {
 
 
         <script>
-var hide=0;
-$(document).ready(function() {
+var hide={{ isshow }};
+
+        $(document).ready(function() {
+            if (hide  != 0) {
+                    $('#adv_panel div .Newscontent,#adv_panel  .col-xs-12,#adv_panel').each(function(){$(this).animate({width:"hide"})});
+                    $('#adv_hide').animate({left: '0'});
+                    $('#clickhide').prop('src', '/static/img/29.png?' + Math.random());
+                    hide = 1;
+                }
 $('#clickhide').click(function () {
        //alert(hide);
         if (hide == 0) {

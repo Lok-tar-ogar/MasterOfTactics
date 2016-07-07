@@ -13,7 +13,7 @@ import os
 # import time
 # from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 # from django.db import connection
-# from django.utils import timezone
+from django.utils import timezone
 try:
     from functools import wraps
 except ImportError:
@@ -43,19 +43,29 @@ def index(request):
     try:
         iplanguage=dic['country']
         if iplanguage=='德国':
-            advs = adv.objects.filter(language='gr')[:3]
+            advs = adv.objects.filter(language='gr',act_date__gt=timezone.now())[:3]
+            if adv:
+                isshow='0'
             return render(request, 'index_gr.html', locals())
         elif iplanguage=='法国':
-            advs = adv.objects.filter(language='fr')[:3]
+            advs = adv.objects.filter(language='fr',act_date__gt=timezone.now())[:3]
+            if adv:
+                isshow = '0'
             return render(request, 'index_fr.html', locals())
         elif iplanguage == '俄罗斯':
-            advs = adv.objects.filter(language='rs')[:3]
+            advs = adv.objects.filter(language='rs',act_date__gt=timezone.now())[:3]
+            if adv:
+                isshow = '0'
             return render(request, 'index_rs.html', locals())
         else:
-            advs = adv.objects.filter(language='en')[:3]
+            advs = adv.objects.filter(language='en',act_date__gt=timezone.now())[:3]
+            if adv:
+                isshow = '0'
         return render(request, 'index_en.html', locals())
 
     except Exception as e:
-        advs=adv.objects.filter(language='en')[:3]
+        advs=adv.objects.filter(language='en',act_date__gt=timezone.now())[:3]
+        if adv:
+            isshow = '0'
         return render(request, 'index_en.html', locals())
 
