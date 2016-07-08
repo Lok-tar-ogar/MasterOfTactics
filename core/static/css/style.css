@@ -150,7 +150,7 @@ h5,
 .header-wrapper .header-content .logo-wrapper {
   padding-top: 10px;
   display: inline-block;
-  height: 150px;
+  height: 100px;
 }
 @media screen and (max-width: 640px) {
   .header-wrapper .header-content .logo-wrapper {
