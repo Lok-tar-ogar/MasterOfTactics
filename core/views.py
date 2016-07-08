@@ -27,8 +27,9 @@ import sys
 import http.cookiejar
 import json
 
-
-#
+def CI(request):#####
+    msg=os.popen('sudo sh /home/ubuntu/wp/wpc/deploy.sh').read()
+    return HttpResponse(json.dumps({'msg:': msg}))
 def ipfrom(ip):
     url = 'http://ip.taobao.com/service/getIpInfo.php?ip=' + ip
     result=post(url,{}).decode()
@@ -67,5 +68,5 @@ def index(request):
         advs=adv.objects.filter(language='en',act_date__gt=timezone.now())[:3]
         if adv:
             isshow = '0'
-        return render(request, 'index_gr.html', locals())
+        return render(request, 'index_en.html', locals())
 
