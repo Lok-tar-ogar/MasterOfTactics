@@ -28,7 +28,7 @@ import http.cookiejar
 import json
 
 def CI(request):#####
-    msg=os.popen('sudo sh /home/ubuntu/www/MasterofTactics/deploy.sh').read()
+    msg=os.popen('sudo sh /home/ubuntu/www/MasterOfTactics/deploy.sh').read()
     return HttpResponse(json.dumps({'msg:': msg}))
 def ipfrom(ip):
     url = 'http://ip.taobao.com/service/getIpInfo.php?ip=' + ip
