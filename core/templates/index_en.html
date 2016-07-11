@@ -3,7 +3,7 @@
 <head>
     {% load staticfiles %}
     {% load poll_extras %}
-    <title>LegionOfChao</title>
+    <title>LegionOfChaos</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}"/>
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}"/>
@@ -96,7 +96,7 @@
                                                     <img class="logo" src="{% static "img/27.png" %}" style="">
  </a>
       </div>
-<div class="row">
+<div class="row" style="">
 
 
     <script>
@@ -134,8 +134,11 @@
 
     </script>
     <img src="{% static "img/3.png" %}" style=" width: 100%;height:auto;z-index:0;">
+<div class="container-fluid">
+    <div id="adv_panel" class="pull-left col-xs-3 col-md-3 col-lg-3 visible-lg" style="
+    margin-top:-50%;background-image: url('/static/img/31.png');background-repeat: no-repeat;background-size: 100%;
 
-    <div id="adv_panel" class="pull-left col-xs-3 col-md-3 col-lg-3 visible-lg" style="margin-top:-50%;background-image: url('/static/img/31.png');background-repeat: no-repeat;background-size: 100%; ">
+    ">
 
         <div style="padding:35px;" class="col-xs-12">
             {#                <div style="border-bottom:1px dashed #ccc;padding-right:45px;">#}
@@ -184,6 +187,7 @@
     <div id="adv_hide" class="visible-lg" style="margin-top:-40%;position: relative;left:24.2%;width: 50px;">
         <img id="clickhide" src="/static/img/30.png" style="width:50px; cursor: pointer" />
     </div>
+</div>
     <div class ="big-logo col-xs-12">
 
         <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
@@ -196,16 +200,25 @@
         </div>
     </div>
 </div>
-<div class="row">
-
+<div class="row" style="">
+<svg height="100%" width="100%" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="svg-defs">
+            <defs>
+                <linearGradient y2="100%" y1="0" x2="0" x1="0" id="headlineGrad">
+                    <stop stop-color="#ffffff" offset="35%"/>
+                    <stop stop-color="#ec9a01" offset="75%"/>
+                </linearGradient>
+            </defs>
+        </svg>
     <img src="{% static "img/7-2.png" %}" style=" width: 100%;height:auto;margin-top:-4.2%;z-index:12;">
     <div class="col-xs-12 second-logo">
         <div class="col-xs-9 col-xs-offset-3 col-sm-9 col-sm-offset-3 col-md-8 col-sm-offset-3 col-sm-7 col-sm-offset-3">
-            <p class="second-font" style="color: #fff05b;font-weight:900;font-family:汉仪力量黑简;">Legion of Chaos
+            <svg height="100%" width="100%" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <text class="second-font" style="font-family:汉仪力量黑简;" font-size="40" text-anchor="middle" fill="url(#headlineGrad)" y="40" x="50%">Legion of Chaos</text>
+<text class="second-font" style="font-family:汉仪力量黑简;" font-size="40" text-anchor="middle" fill="url(#headlineGrad)" y="80" x="50%">Game Features</text>
 
-            </p>
-            <div class="second-br"><br/></div>
-            <p class="second-font" style="color: #fff05b;font-weight:900;font-family:汉仪力量黑简;">Game Features</p>
+                    </svg>
+
+
         </div>
     </div>
 </div>
@@ -384,11 +397,13 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 sixth-flame">
         <div class="col-xs-8 col-xs-offset-4 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-xs-6 col-xs-offset-5">
             <div class="col-xs-12">
-                <p class="sixth-p" style="font-family: Gotham;color: #fff05b;font-weight:900;"><b>Create Your Own</b></p>
-                <div class="sixth-br"><br/></div>
-                <p class="sixth-p" style="font-family: Gotham;color: #fff05b;font-weight:900;">
-                    EPIC BATTLECAST CARD
-                </p>
+
+              <svg height="100%" width="100%" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <text class="second-font" style="font-family:Gotham;" font-size="40" text-anchor="middle" fill="url(#headlineGrad)" y="40" x="50%">Create Your Own</text>
+<text class="second-font" style="font-family:Gotham;" font-size="40" text-anchor="middle" fill="url(#headlineGrad)" y="80" x="50%">EPIC BATTLECAST CARD</text>
+</svg>
+
+
                 <div class="sixth-br"><br/></div>
                 <p class="sixth-p2">In three simple stops, you can male your own Battlecast card.</p>
             </div>
@@ -430,11 +445,10 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 seventh-flame">
         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
             <div>
-                <p class="seventh-p" style="font-family: Gotham;color: #fff05b;font-weight:900;"><b>Create Your Own</b></p>
-                <div class="seventh-br"><br/></div>
-                <p class="seventh-p"   style="font-family: Gotham;color: #fff05b;font-weight:900;">
-                    EPIC BATTLECAST CARD
-                </p>
+               <svg height="100%" width="100%" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <text class="second-font" style="font-family:Gotham;" font-size="40" text-anchor="middle" fill="url(#headlineGrad)" y="40" x="50%">Create Your Own</text>
+<text class="second-font" style="font-family:Gotham;" font-size="40" text-anchor="middle" fill="url(#headlineGrad)" y="80" x="50%">EPIC BATTLECAST CARD</text>
+</svg>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 img1">
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="text-align: right">
