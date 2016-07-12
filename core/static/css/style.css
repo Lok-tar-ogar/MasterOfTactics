@@ -1147,7 +1147,7 @@ h5,
 }
 .third-p{
   font-size:30px;
-  text-indent:1em;
+  /*text-indent:1em;*/
   font-weight: bold;
 }
 @media only screen and (max-width: 1200px) {.third-p{font-size:24px;text-indent:1em;}.third-ul{font-size:15px;}}
@@ -1190,7 +1190,7 @@ h5,
   font-size: 16px;
 }
 .fourth-img{
-  margin-top: 0;
+  margin-top: 20px;
 }
 .fourth-img img{
   width: 100%;
